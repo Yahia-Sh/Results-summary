@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  width: 750px;
+  margin: 50px auto;
+  border-radius: 25px;
+  box-shadow: 7px 7px 20px 0px rgb(242 241 241);
+  display: flex;
+}
+
+.score-box {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  padding: 40px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-box > p:first-of-type {
+  font-size: 1.5em;
+}
+
+.result-circle {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1) 50%,
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.result-circle h1 {
+  font-size: 4em;
+}
+
+.score-box > p:last-of-type {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.score-box p {
+  color: hsl(241, 100%, 89%);
+}
+/************************/
+
+.summary-box {
+  padding: 40px;
+  width: 375px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul li {
+  display: flex;
+  padding: 18px;
+  margin: 15px 15px 15px 0;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+ul li:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.08);
+  color: #f05c5c;
+}
+
+ul li:nth-child(2) {
+  background-color: hsl(39, 100%, 56%, 0.08);
+  color: #f59f00;
+}
+
+ul li:nth-child(3) {
+  background-color: hsl(166, 100%, 37%, 0.08);
+  color: #00bd91;
+}
+
+ul li:nth-child(4) {
+  background-color: hsl(234, 85%, 45%, 0.08);
+  color: #1125d4;
+}
+
+ul li p:first-of-type {
+  margin-left: 10px;
+  width: 60%;
+}
+
+ul li > p:last-of-type {
+  color: #a5a4ce;
+}
+
+ul li > p:last-of-type span {
+  color: #000;
+}
+
+button {
+  width: calc(100% - 15px);
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: #e5e5ef;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsla(256, 72%, 46%, 1);
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    width: 375px;
+  }
+
+  .score-box > p:last-of-type {
+    width: 250px;
+  }
+}
